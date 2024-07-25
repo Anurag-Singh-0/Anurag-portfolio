@@ -1,15 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Potfolio - Anurag</title>
-    <!-- Page design css link -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Remix icon CDN link -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website - Anurag Singh</title>
+    <link rel="stylesheet" href="style.css"/>
+    <!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  </head>
+  <body>
+    <!-- Start Header Section -->
+    <div class="header">
+        <div class="container">
+            <nav>
+                <div class="logo"><i class="fa-solid fa-mug-hot"></i> Anurag</div>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li> 
+                </ul>
+            </nav>
 
-</body>
+            <div class="header-section">
+                <div class="left-content">
+                    <h1>Hi There, <br>I'm <span>Anurag Singh</span></h1>
+                    <p>I'm a <span id="auto-type"></span></p>
+
+                    <ul class="social-media">
+                        <li><a href="https://github.com/Anurag-Singh-0" target="_blank"><i class="fa-brands fa-github-alt"></i></a></li>
+
+                        <li><a href="https://www.instagram.com/anurag.singh_04?igsh=MXdvbWd3NjBpOHc1Mw==" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+
+                        <li><a href="https://www.linkedin.com/in/anurag-singh-75a306259/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+
+                        <li><a href="https://x.com/AnuragSingh4141?t=XO1yqvm2NdW0ys86Fn7XSA&s=08"><i class="fa-brands fa-twitter"target="_blank"></i></a></li>
+                        
+                        <li><a href="https://www.youtube.com/channel/UCc3CblRp_NL7zMeLStbFqeA"><i class="fa-brands fa-youtube" target="_blank"></i></a></li>
+                    </ul>
+                </div>
+                <div class="card-content">
+                    <img src="image/Model.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header Section -->
+
+
+    <!-- Start About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-card">
+                    <img src="image/second model.jpg">
+                </div>
+    
+                <div id="right-about-sec">
+                    <h1 class="sub-title"><i class="fa-solid fa-person"></i> About Me</h1>
+
+                    <p class="info">Hello! I am Anurag Singh, a first-year Bachelor of Computer Applications (BCA) student specializing in Data Science & Artificial Intelligence at Babu Banarasi Das University. As a passionate tech enthusiast, I am eager to dive deep into the world of programming and software development. My journey in the realm of technology has just begun, but my enthusiasm for learning and growing in this field is boundless.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Front-End Developer</li>
+                            <li><span>Content Creator</span><br>Videography, YouTube</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - Current</span><br>BCA DS & AI at BBD University</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Current</span><br>Always learning new things to keep myself ubdated.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About Section -->
+
+
+    <!-- Start Skills Section -->
+    <div id="skill">
+        <h1><i class="fa-solid fa-ghost"></i> My Skill's</h1>
+        <div class="container">
+            <div class="box">
+                <img src="image/JavaScript.png">
+                <p>JavaScript</p>
+            </div>
+
+            <div class="box">
+                <img src="image/html.png">
+                <p>HTML5</p>
+            </div>
+
+            <div class="box">
+                <img src="image/CSS.png">
+                <p>CSS3</p>
+            </div>
+
+            <div class="box">
+                <img src="/image/GitHub.png">
+                <p>GitHub</p>
+            </div>
+
+            <div class="box">
+                <img src="/image/NodeJs.png">
+                <p>NodeJS</p>
+            </div>
+
+            <div class="box">
+                <img src="/image/MySQL.png">
+                <p>MySQL</p>
+            </div>
+
+            <div class="box">
+                <img src="/image/Python.png">
+                <p>Python</p>
+            </div>
+
+            <div class="box">
+                <img src="image/YouTube.png">
+                <p>Content Creator</p>
+            </div>
+        </div>
+    </div>
+    <!-- End Skills Section -->
+
+
+
+
+
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <!-- Auto Type CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- My Script -->
+    <script src="script.js"></script>
+  </body>
 </html>

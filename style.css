@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primaryColor: #0041c4;
+  --secondryColor: #ffcc00;
+  --mainColor: #f2f2f2;
+  --darkColor: #292929;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--mainColor);
+  scroll-snap-type: y mandatory;
+}
+/* Start Header section Styling */
+.header {
+  height: 100vh;
+  width: 100%;
+  border-bottom: 3px solid #00000015;
+}
+
+.container {
+  padding: 10px 7%;
+}
+
+.logo {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+.logo:hover {
+  color: var(--primaryColor);
+}
+
+.logo i {
+  padding-right: 8px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 4px;
+  background: var(--primaryColor);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: all ease-in 0.2s;
+  border-radius: 10px;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header-section {
+  width: 100%;
+  height: 40vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 0;
+  perspective: 1000px;
+}
+
+.left-content {
+  width: 60%;
+  padding-top: 2%;
+}
+
+.left-content h1 {
+  font-size: 3.6rem;
+  font-weight: 900;
+  margin-bottom: 3%;
+}
+
+.left-content h1 span {
+  color: red;
+}
+
+.left-content p {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 5%;
+}
+
+.left-content p span {
+  color: var(--primaryColor);
+}
+
+.card-content {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.card-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transform: translateZ(0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: saturate(1.8);
+  filter: drop-shadow();
+}
+
+.left-content .social-media {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-content .social-media li {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  transition: all ease-out 0.2s;
+}
+
+.left-content .social-media li:hover {
+  transform: scale(1.4) rotate(-8deg);
+  background-color: var(--secondryColor);
+}
+
+.left-content .social-media li a {
+  text-decoration: none;
+  color: #fff;
+  transition: all ease-out 0.2s;
+}
+
+.social-media li a i {
+  font-size: 25px;
+}
+
+.left-content .social-media li a:hover {
+  color: #000;
+}
+
+/* End Header section styling */
+
+/* <<<------Start About section-------->>>> */
+#about {
+  padding: 50px 0;
+  height: 100vh;
+}
+
+#about .row {
+  perspective: 1000px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#about .container .about-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transform: translateZ(0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: grayscale(0);
+  transition: all ease 0.3s;
+  filter: saturate(1.8);
+}
+
+#about .container .about-card img:hover {
+  filter: grayscale(1);
+}
+
+#about .container .about-card {
+  width: 350px;
+  height: 500px;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+#right-about-sec {
+  flex-basis: 65%;
+}
+
+.sub-title {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.info {
+  font-size: 18px;
+  margin-top: 2%;
+}
+
+.tab-titles {
+  display: flex;
+  margin: 20px 0 25px;
+}
+
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 4px;
+  border-radius: 10px;
+  background-color: var(--primaryColor);
+  left: 0;
+  position: absolute;
+  bottom: -5px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+  width: 100%;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tab-contents ul li span {
+  font-size: 14px;
+  color: rgb(223, 3, 3);
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+/* <<<<---------Start skills section------->>>>>> */
+#skill {
+  height: 100vh;
+  padding: 10px 0;
+  text-align: center;
+  background-color: var(--secondryColor);
+}
+
+#skill h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+#skill .container {
+  width: 75%;
+  margin: auto;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.226);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 30px 30px;
+  margin-top: 30px;
+}
+
+#skill .container .box {
+  height: 120px;
+  width: 130px;
+  background-color:#001b29;
+  margin: 18px 12px;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+#skill .container .box:hover{
+  background-color: #000;
+  filter: drop-shadow(5px 5px 10px #00000093);
+}
+
+#skill .container .box img {
+  width: 4vw;
+  filter: saturate(2);
+}
+
+#skill .container .box p {
+  font-size: 18px;
+  padding-top: 2px;
+  font-weight:500;
+}
