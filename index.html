@@ -7,20 +7,22 @@
     <link rel="stylesheet" href="style.css"/>
     <!-- font-awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- Remix icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
   </head>
   <body>
     <!-- Start Header Section -->
-    <div class="header">
+    <div class="header" id="home">
         <div class="container">
             <nav>
                 <div class="logo"><i class="fa-solid fa-mug-hot"></i> Anurag</div>
                 <ul>
-                    <li><a href="#header">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skill">Skills</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li> 
+                    <li><a href="#education-sec">Education</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li> 
                 </ul>
             </nav>
 
@@ -142,10 +144,141 @@
     </div>
     <!-- End Skills Section -->
 
+    <!-- Start Education section -->
+    <div id="education-sec">
+        <div class="container">
+            <div class="edu-head">
+                <h1><i class="fa-solid fa-graduation-cap"></i> My Education</h1>
+                <p>The beautiful thing about learning is that no one can take it away from you.</p>
+            </div>
 
+            <div class="college-card">
+                <img src="image/BBDU2.jpg">
+                <div class="college-info">
+                    <h1>Bachelor of Computer Application - DS & AI</h1>
+                    <p>Babu Banarasi Das University - Lucknow</p>
+                    <p class="sec-p">2023 - 2025 | Pursuing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Education Section -->
 
+    <!-- Start Project Section -->
+    <div id="project">
+        <div class="container">
+            <h1><i class="fa-solid fa-laptop"></i> My Project's</h1>
 
+            <div class="project-list">
 
+                <div class="box">
+                    <img src="image/Todo app.jpg">
+                    
+                    <div class="layer">
+                        <h3>Todo App</h3>
+                        <p>The Todo List app! With this app, you can easily add or delete your tasks, and save them for later.</p>
+                        <div class="view">
+                            <a href="https://lnkd.in/gpFAzyTP" target="_blank" class="btn"><i class="ri-eye-line"></i>View</a>
+                            <a href="https://github.com/Anurag-Singh-0/Todo-app" class="btn"><i class="ri-codepen-line"></i>Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="image/Dom project.jpg">
+                    <div class="layer">
+                        <h3>DOM Basic Project</h3>
+                        <p>Excited to share my new DOM(Document Object Model) project, where I've created dynamic and interactive web pages</p>
+                        <div class="view">
+                            <a href="https://dom-project-lake.vercel.app/" target="_blank" class="btn"><i class="ri-eye-line"></i>View</a>
+                            <a href="https://github.com/Anurag-Singh-0/DOM-Project" class="btn"><i class="ri-codepen-line"></i>Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="image/Tic tac.jpg">
+                    <div class="layer">
+                        <h3>Tic Tac Toe</h3>
+                        <p>The Todo List app! With this app, you can easily add or delete your tasks, and save them for later.</p>
+                        <div class="view">
+                            <a href="https://tictac0.vercel.app/" target="_blank" class="btn"><i class="ri-eye-line"></i>View</a>
+                            <a href="https://github.com/Anurag-Singh-0/Tic-Tac-Toe-Game"  class="btn"><i class="ri-codepen-line"></i>Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+           <a href="#" class="btn-2">See More<i class="ri-arrow-right-s-fill"></i></a>
+        </div>
+    </div>
+    <!-- End Project Section -->
+
+    <!-- Start Contact section -->
+    <div id="contact">
+        <div class="container">
+            <h1><i class="fa-solid fa-user"></i> Contact Me</h1>
+            <div class="row">
+                <div class="left-contact">
+                    <p><i class="fa-solid fa-envelope"></i> as1686864@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 XXX-XXX-XXXX</p>
+                    <div id="msg"></div>
+                </div>
+                <div class="right-contact">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <textarea name="Message" placeholder="Message" rows="5" required></textarea>
+                        <button type="submit" class="sub-btn">Submit <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact Section -->
+
+    <!-- Start Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <h3>Anurag Portfolio</h3>
+                <p>Thanks for visiting my personal portfolio website, If you have any questions or feedback, please feel free to reach out</p>
+            </div>
+            <div class="quic-links">
+                <h3>Quic Links</h3>
+                <a href="#home"><i class="ri-send-plane-2-line"></i> Home</a>
+                <a href="#about"><i class="ri-send-plane-2-line"></i> About</a>
+                <a href="#skill"><i class="ri-send-plane-2-line"></i> Skills</a>
+                <a href="#education-sec"><i class="ri-send-plane-2-line"></i> Education</a>
+                <a href="#project"><i class="ri-send-plane-2-line"></i> Projects</a>
+                <a href="#contact"><i class="ri-send-plane-2-line"></i> Contact</a> 
+                
+            </div>
+            <div class="contact-info">
+                <h3>Contact info</h3>
+                <p><i class="fa-solid fa-envelope"></i> as1686864@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 XXX-XXX-XXXX</p>
+                <p><i class="ri-map-pin-user-fill"></i> Lucknow</p>
+                
+                <ul class="footer-social">
+                    <li><a href="https://github.com/Anurag-Singh-0" target="_blank"><i class="fa-brands fa-github-alt"></i></a></li>
+    
+                    <li><a href="https://www.instagram.com/anurag.singh_04?igsh=MXdvbWd3NjBpOHc1Mw==" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+    
+                    <li><a href="https://www.linkedin.com/in/anurag-singh-75a306259/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+    
+                    <li><a href="https://x.com/AnuragSingh4141?t=XO1yqvm2NdW0ys86Fn7XSA&s=08"><i class="fa-brands fa-twitter"target="_blank"></i></a></li>
+                    
+                    <li><a href="https://www.youtube.com/channel/UCc3CblRp_NL7zMeLStbFqeA"><i class="fa-brands fa-youtube" target="_blank"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="copyright-message">
+            <p>Copyright &copy; Anurag, Made with <i class="ri-heart-fill"></i> By <span>Anurag Singh</span></p>
+        </div>
+    </footer>
+    <!-- End Footer Section -->
 
     <!-- GSAP CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
@@ -153,5 +286,26 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!-- My Script -->
     <script src="script.js"></script>
+
+    <!-- Submited Message Script -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzB-mRePqb3-2SGGLfKcbMTJwh2CLwpOo2h9yEKRl_ufxoDgRnnKRR5hWMBD9VfOxlayg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully";
+                setTimeout(function(){
+                    msg.innerHTML = "";
+                },2000)
+
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
   </body>
 </html>

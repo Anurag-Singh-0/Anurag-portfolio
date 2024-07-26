@@ -10,18 +10,20 @@
 :root {
   --primaryColor: #0041c4;
   --secondryColor: #ffcc00;
-  --mainColor: #f2f2f2;
+  --mainColor: #e5ecfb;
   --darkColor: #292929;
 }
 
 html {
   scroll-behavior: smooth;
+  /* user-select: none; */
 }
 
 body {
   background-color: var(--mainColor);
   scroll-snap-type: y mandatory;
 }
+
 /* Start Header section Styling */
 .header {
   height: 100vh;
@@ -177,9 +179,8 @@ nav ul li a:hover::after {
 
 .left-content .social-media li a:hover {
   color: #000;
+  text-align: right;
 }
-
-/* End Header section styling */
 
 /* <<<------Start About section-------->>>> */
 #about {
@@ -306,7 +307,7 @@ nav ul li a:hover::after {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   display: flex;
-  justify-content:center;
+  justify-content: center;
   flex-wrap: wrap;
   overflow: hidden;
   padding: 30px 30px;
@@ -316,7 +317,7 @@ nav ul li a:hover::after {
 #skill .container .box {
   height: 120px;
   width: 130px;
-  background-color:#001b29;
+  background-color: #001b29;
   margin: 18px 12px;
   border-radius: 10px;
   color: #fff;
@@ -328,7 +329,7 @@ nav ul li a:hover::after {
   cursor: pointer;
 }
 
-#skill .container .box:hover{
+#skill .container .box:hover {
   background-color: #000;
   filter: drop-shadow(5px 5px 10px #00000093);
 }
@@ -341,5 +342,396 @@ nav ul li a:hover::after {
 #skill .container .box p {
   font-size: 18px;
   padding-top: 2px;
-  font-weight:500;
+  font-weight: 500;
+}
+
+/* <<<<<----------Start education section------->>>>>>> */
+
+#education-sec {
+  padding: 20px 0;
+  padding-bottom: 100px;
+  background-color: #e5ecfb;
+}
+
+.edu-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5%;
+  gap: 10px;
+}
+
+.college-card {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+
+.college-card img {
+  width: 17vw;
+  border-radius: 10px 0 0px 10px;
+  filter: saturate(2);
+  margin-right: 25px;
+}
+
+.college-info {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  line-height: 10px;
+}
+
+.college-info h1 {
+  font-size: 2.3rem;
+}
+
+.college-info .sec-p {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primaryColor);
+}
+
+.college-card:hover {
+  filter: drop-shadow(0 0 30px #0000005d);
+  transform: translate(0, -10px);
+}
+
+/* <<<<<<<-----------Start Project Section-------->>>>>>>> */
+#project {
+  padding: 20px 0;
+}
+
+#project .container h1 {
+  text-align: center;
+}
+
+.project-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.project-list .box {
+  height: 350px;
+  width: 300px;
+  margin: 20px 10px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-list .box img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.project-list .box .layer {
+  width: 100%;
+  height: 0;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.705), #001b29 40%);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 40px;
+  font-size: 14px;
+  transition: height 0.4s;
+}
+
+.layer h3 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 28px;
+}
+
+.view {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 5px 15px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  color: #ffffff80;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #ffffff7a;
+  transition: 0.5s ease;
+  user-select: none;
+  text-decoration: none;
+  margin-top: 30px;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background: #008cff;
+  border: 1px solid #008cff;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+    0 0 100px #008cff;
+}
+
+.project-list .box:hover img {
+  transform: scale(1.1);
+}
+
+.project-list .box:hover .layer {
+  height: 115%;
+}
+
+.btn-2 {
+  --bg: var(--primaryColor);
+  --text-color: #fff;
+  position: relative;
+  border: none;
+  background: var(--bg);
+  color: var(--text-color);
+  padding: 5px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.2s;
+  border-radius: 5px;
+  box-shadow: #0e0ee091 0px 7px 2px, #000 0px 8px 5px;
+  text-decoration: none;
+  display: block;
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.btn-2:active {
+  top: 4px;
+  box-shadow: #001b29 0px 3px 2px, #000 0px 3px 5px;
+}
+
+/* <<<<<<--------------Start Contact Section------------->>>>>>>> */
+#contact {
+  padding: 50px 0;
+  /* height: 100vh; */
+}
+
+#contact .container h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.left-contact {
+  flex-basis: 35%;
+}
+
+.left-contact p {
+  margin: 20px 0;
+}
+
+.right-contact {
+  flex-basis: 60%;
+  max-width: 50%;
+}
+
+.left-contact p i {
+  font-size: 25px;
+  margin-right: 15px;
+}
+
+.right-contact form {
+  width: 100%;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  outline: 0;
+  padding: 15px;
+  margin: 15px 0;
+  font-size: 18px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 20px 0 rgba(31, 38, 135, 0.164);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: border 0.2s;
+}
+
+form input:focus {
+  border: 1.5px solid var(--primaryColor);
+  cursor: pointer;
+}
+
+form textarea:focus {
+  border: 1.5px solid var(--primaryColor);
+  cursor: pointer;
+}
+
+#contact .container .row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.sub-btn {
+  margin-top: 15px;
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.164);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+
+.sub-btn:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+.sub-btn:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+/* <<<<<<<<------------Start Footer Section------------>>>>>>>>>>>> */
+footer .container {
+  padding: 30px 0;
+  flex-basis: 65%;
+  height: 45vh;
+  background-color: #001b29;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer .container .copyright {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  gap: 20px;
+}
+
+footer .container .copyright p {
+  font-size: 15px;
+  color: #ffffffb9;
+  text-wrap: wrap;
+}
+
+footer .container h3 {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+footer .container .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer .contact-info p i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: var(--secondryColor);
+}
+
+footer .quic-links a {
+  text-decoration: none;
+  color: #ffffffb9;
+  font-size: 15px;
+  transition: all ease 0.3s;
+}
+
+footer .quic-links a:hover {
+  cursor: pointer;
+  color: var(--secondryColor);
+  transform: translate(10px);
+}
+
+footer .quic-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-info ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  border-radius: 50px;
+  background: #fff;
+  height: 30px;
+  width: 30px;
+  transition: all 0.2s;
+}
+
+.contact-info ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info ul li a {
+  color: #000;
+}
+
+.contact-info ul li a i {
+  font-size: 20px;
+}
+
+.contact-info ul li:hover {
+  background-color: var(--secondryColor);
+  transform: scale(1.5) translateY(-10px);
+}
+
+#copyright-message {
+  border-top: 1px solid #ffffff50;
+  background-color: #001b29;
+  height: 10vh;
+  text-align: center;
+  padding: 15px 0;
+  color: #ffffffad;
+}
+
+#copyright-message p i {
+  font-size: 20px;
+  color: red;
+}
+
+#copyright-message p span {
+  color: #ffcc00;
+}
+
+#msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  margin-top: 50px;
+  font-size: 25px;
+  color: green;
 }
