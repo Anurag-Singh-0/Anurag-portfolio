@@ -1,3 +1,63 @@
 @media only screen and (max-width: 640px) {
+  .header-container {
+    padding: 0;
+  }
+
+  .header-container nav {
+    position: fixed;
+    padding: 8px 20px;
+    background-color: rgba(255, 255, 255, 0.39);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 100%;
+    z-index: 10;
+  }
+
+  .header-container nav .logo {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .header-container nav ul li {
+    display: none;
+  }
+
+  .hero-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px 30px;
+  }
+
+  .hero-section .card-content {
+    height: 200px;
+    width: 200px;
+    margin:30px 50px 10px 55px; 
+  }
+
+  .hero-section .card-content img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hero-section .left-content h1 {
+    font-size: 35px;
+    width:100%;
+  }
+
+  .hero-section .left-content p {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+
+  .left-content {
+    width: 100%;
+  }
+
+  .left-content .social-media {
+    max-width: 100%;
+    width: 100vw;
+    padding:10px 20px 0 0;
+  }
 
 }
