@@ -140,8 +140,6 @@ nav ul li a:hover::after {
   position: absolute;
   top: 0;
   left: 0;
-  filter: saturate(1.8);
-  filter: drop-shadow();
 }
 
 .left-content .social-media {
@@ -213,7 +211,6 @@ nav ul li a:hover::after {
   left: 0;
   filter: grayscale(0);
   transition: all ease 0.3s;
-  filter: saturate(1.8);
 }
 
 .about-card img:hover {
