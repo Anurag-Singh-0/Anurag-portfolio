@@ -24,34 +24,20 @@ body {
   scroll-snap-type: y mandatory;
 }
 
-/* Start Header section Styling */
+/* <<<<<<<<<<<<<----------------------Start Header section Styling----------------->>>>>>>>>>> */
 .header {
+  position: relative;
+}
+
+.header-container {
   height: 100vh;
-  width: 100%;
+  max-width: 100%;
   border-bottom: 3px solid #00000015;
-}
-
-.container {
-  padding: 10px 7%;
-}
-
-.logo {
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  transition: all ease-in-out 0.2s;
-  cursor: pointer;
-}
-
-.logo:hover {
-  color: var(--primaryColor);
-}
-
-.logo i {
-  padding-right: 8px;
+  padding: 10px 100px;
 }
 
 nav {
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -87,18 +73,33 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-.header-section {
-  width: 100%;
-  height: 40vw;
+.logo {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+.logo:hover {
+  color: var(--primaryColor);
+}
+
+.logo i {
+  padding-right: 8px;
+}
+
+.hero-section {
   display: flex;
   justify-content: space-between;
-  padding: 70px 0;
+  padding: 80px 0 40px 0;
   perspective: 1000px;
 }
 
 .left-content {
   width: 60%;
   padding-top: 2%;
+  position: relative;
 }
 
 .left-content h1 {
@@ -108,7 +109,7 @@ nav ul li a:hover::after {
 }
 
 .left-content h1 span {
-  color: red;
+  color: rgb(228, 11, 54);
 }
 
 .left-content p {
@@ -181,11 +182,17 @@ nav ul li a:hover::after {
   color: #000;
   text-align: right;
 }
+/* <<<<<<<<<<<<<----------------------End Header section Styling----------------->>>>>>>>>>> */
 
-/* <<<------Start About section-------->>>> */
+
+/* <<<<<<<<<<<<<----------------------Start About section Styling----------------->>>>>>>>>>> */
 #about {
-  padding: 50px 0;
+  position: relative;
+}
+
+.about-container {
   height: 100vh;
+  padding: 50px 80px;
 }
 
 #about .row {
@@ -195,7 +202,7 @@ nav ul li a:hover::after {
   flex-wrap: wrap;
 }
 
-#about .container .about-card img {
+.about-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -209,11 +216,11 @@ nav ul li a:hover::after {
   filter: saturate(1.8);
 }
 
-#about .container .about-card img:hover {
+.about-card img:hover {
   filter: grayscale(1);
 }
 
-#about .container .about-card {
+.about-card {
   width: 350px;
   height: 500px;
   border-radius: 10px;
@@ -282,21 +289,28 @@ nav ul li a:hover::after {
 .tab-contents.active-tab {
   display: block;
 }
+/* <<<<<<<<<<<---------------End About section Styling----------------->>>>>>>>>>> */
 
-/* <<<<---------Start skills section------->>>>>> */
+
+/* <<<<<---------------------Start skills section---------------------->>>>>>>>>>>> */
 #skill {
+  position: relative;
+}
+
+.skill-container {
+  position: relative;
   height: 100vh;
-  padding: 10px 0;
-  text-align: center;
+  padding: 20px 0 20px 0;
   background-color: var(--secondryColor);
 }
 
 #skill h1 {
   font-size: 40px;
   font-weight: 900;
+  text-align: center;
 }
 
-#skill .container {
+.innerSkill-content {
   width: 75%;
   margin: auto;
   border-radius: 20px;
@@ -310,11 +324,10 @@ nav ul li a:hover::after {
   justify-content: center;
   flex-wrap: wrap;
   overflow: hidden;
-  padding: 30px 30px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
-#skill .container .box {
+.innerSkill-content .box {
   height: 120px;
   width: 130px;
   background-color: #001b29;
@@ -326,29 +339,35 @@ nav ul li a:hover::after {
   align-items: center;
   flex-direction: column;
   transition: all ease-in-out 0.2s;
+  overflow: hidden;
   cursor: pointer;
 }
 
-#skill .container .box:hover {
+.innerSkill-content .box:hover {
   background-color: #000;
   filter: drop-shadow(5px 5px 10px #00000093);
 }
 
-#skill .container .box img {
+.innerSkill-content .box img {
   width: 4vw;
   filter: saturate(2);
 }
 
-#skill .container .box p {
+.innerSkill-content .box p {
   font-size: 18px;
   padding-top: 2px;
   font-weight: 500;
 }
+/* <<<<<---------------------End skills section---------------------->>>>>>>>>>>> */ 
 
-/* <<<<<----------Start education section------->>>>>>> */
+/* <<<<<--------------------Start education section----------------->>>>>>>>>> */
+.education-sec {
+  position: relative;
+}
 
-#education-sec {
-  padding: 20px 0;
+.education-container {
+  position: relative;
+  padding: 50px 70px;
   padding-bottom: 100px;
   background-color: #e5ecfb;
 }
@@ -400,12 +419,20 @@ nav ul li a:hover::after {
   transform: translate(0, -10px);
 }
 
-/* <<<<<<<-----------Start Project Section-------->>>>>>>> */
+/* <<<<<--------------------End education section----------------->>>>>>>>>> */
+
+
+/* <<<<<<<-----------------Start Project Section------------------>>>>>>>> */
 #project {
-  padding: 20px 0;
+  position: relative;
 }
 
-#project .container h1 {
+.project-container {
+  position: relative;
+  padding: 30px 0;
+}
+
+#project .project-container h1 {
   text-align: center;
 }
 
@@ -522,16 +549,28 @@ nav ul li a:hover::after {
   top: 4px;
   box-shadow: #001b29 0px 3px 2px, #000 0px 3px 5px;
 }
+/* <<<<<<<-----------------End Project Section------------------>>>>>>>> */
 
-/* <<<<<<--------------Start Contact Section------------->>>>>>>> */
+
+/* <<<<<<--------------Start Contact Section-------------------->>>>>>>> */
 #contact {
-  padding: 50px 0;
-  /* height: 100vh; */
+ position: relative;
 }
 
-#contact .container h1 {
+.contact-container {
+  height: 100vh;
+  padding:30px 0 60px 0;
+}
+
+.contact-container .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-container h1 {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom:30px;
 }
 
 .left-contact {
@@ -582,7 +621,7 @@ form textarea:focus {
   cursor: pointer;
 }
 
-#contact .container .row {
+#contact .contact-container .row {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -617,6 +656,8 @@ form textarea:focus {
   transform: translateY(10px);
   transition: 100ms;
 }
+/* <<<<<<--------------End Contact Section-------------------->>>>>>>> */
+
 
 /* <<<<<<<<------------Start Footer Section------------>>>>>>>>>>>> */
 footer .container {
