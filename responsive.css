@@ -16,7 +16,7 @@ nav .fas {
   }
 
   .header-container nav {
-    position:fixed;
+    position: fixed;
     top: 0;
     padding: 8px 20px;
     background-color: rgba(255, 255, 255, 0.39);
@@ -34,7 +34,7 @@ nav .fas {
   .header-container nav ul {
     position: fixed;
     top: 0;
-    right: -250px;
+    right: 0;
     width: 75%;
     height: 100vh;
     padding-top: 50px;
@@ -93,13 +93,16 @@ nav .fas {
   }
 
   .left-content .social-media {
-    max-width: 100%;
-    width: 100vw;
-    padding: 10px 20px 0 0;
+    width: 100%;
   }
 
   .left-content .social-media li:hover {
     transform: scale(1.2);
+  }
+
+  .left-content .social-media li {
+    height: 50px;
+    width: 50px;
   }
 
   /* <<<<<<<-----------------About Section------------->>>>>>>>>>>> */
@@ -134,8 +137,8 @@ nav .fas {
   /* <<<<<<<------------------Skill Section--------------->>>>>>>> */
 
   .skill-container {
-    padding: 20px 20px;
-    height:auto;
+    padding: 15px 20px 40px 20px;
+    height: auto;
   }
 
   .innerSkill-content {
@@ -150,5 +153,163 @@ nav .fas {
   .innerSkill-content .box img {
     height: 50px;
     width: 50px;
+  }
+
+  /* <<<<<<<------------------Education Section--------------->>>>>>>> */
+  .education-container {
+    width: 100vw;
+    height: auto;
+    padding: 20px 20px;
+  }
+
+  .edu-head {
+    text-align: center;
+  }
+
+  .college-card {
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding: 15px;
+    box-shadow: 0 0 30px #00000041;
+  }
+
+  .college-card img {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    margin: 0 0 20px 0;
+  }
+
+  .college-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+    line-height: 1.2;
+  }
+
+  .college-info h1 {
+    font-size: 25px;
+  }
+
+  /* <<<<<<<<<<<<----------------Project Section------------------>>>>>>>>>>>>>>>>   */
+
+  .project-container {
+    height: auto;
+  }
+
+  .project-container .btn-2 {
+    display: none;
+  }
+
+  /* <<<<<<<<<<<<----------------Contact Section------------------>>>>>>>>>>>>>>>>   */
+
+  .contact-container {
+    width: 100vw;
+    height: auto;
+    padding:0 20px;
+  }
+
+  .left-contact {
+    font-size: 15px;
+  }
+
+  .left-contact p i {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+
+  .contact-container .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  form input,
+  form textarea {
+    width:100%;
+    box-shadow: none;
+    border: 1px solid #000;
+    background-color: #e5ecfb;
+  }
+
+  .right-contact {
+    position: relative;
+  }
+
+  .right-contact form {
+    width: 90vw;
+    padding: 20px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 20px #0000001c;
+  }
+
+  .sub-btn {
+    box-shadow: none;
+    border: 1px solid #000;
+  }
+
+  .sub-btn:hover {
+    box-shadow:none;
+  }
+
+  form input:focus {
+    border: 2px solid var(--primaryColor);
+  }
+
+  form textarea:focus {
+    border: 2px solid var(--primaryColor);
+  }
+
+  /* <<<<<<<<<<<<-------------------Footer Section----------------->>>>>>>>>>> */
+
+  footer .container {
+    height: auto;
+    width: 100%;
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer .container .copyright {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+
+  .quic-links {
+    margin-bottom: 10px;
+  }
+
+  footer .container .contact-info {
+    display: flex;
+    gap: 20px;
+  }
+
+  .contact-info ul li  {
+    height: 40px;
+    width: 40px;
+  } 
+
+  #copyright-message  {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 20px 10px;
+    font-size:12px;
+    height: auto;
   }
 }

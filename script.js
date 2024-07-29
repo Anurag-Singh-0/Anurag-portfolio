@@ -1,4 +1,11 @@
 let autotype = document.querySelector("#auto-type");
+let closeMenu = document.querySelector("#closeMenu");
+let openMenu = document.querySelector("#openMenu");
+
+
+openMenu.addEventListener("click", () => {
+  
+})
 
 var typed = new Typed(autotype, {
   strings: [

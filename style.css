@@ -386,12 +386,13 @@ nav ul li a:hover::after {
   border-radius: 10px;
   cursor: pointer;
   transition: all ease-in-out 0.2s;
+  margin-top: 20px;
 }
 
 .college-card img {
   width: 17vw;
   border-radius: 10px 0 0px 10px;
-  filter: saturate(2);
+  filter: saturate(1.2);
   margin-right: 25px;
 }
 
@@ -590,6 +591,10 @@ nav ul li a:hover::after {
 }
 
 .right-contact form {
+  width: 100%;
+}
+
+.right-contact {
   width: 100%;
 }
 
