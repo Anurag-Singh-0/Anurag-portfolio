@@ -190,7 +190,7 @@ nav ul li a:hover::after {
 
 .about-container {
   height: 100vh;
-  padding: 50px 80px;
+  padding: 20px 80px;
 }
 
 #about .row {
@@ -198,6 +198,7 @@ nav ul li a:hover::after {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 20px 0;
 }
 
 .about-card img {
@@ -233,6 +234,7 @@ nav ul li a:hover::after {
 .sub-title {
   font-size: 40px;
   font-weight: 900;
+  text-align: center;
 }
 
 .info {
@@ -347,7 +349,6 @@ nav ul li a:hover::after {
 
 .innerSkill-content .box img {
   width: 4vw;
-  filter: saturate(2);
 }
 
 .innerSkill-content .box p {
