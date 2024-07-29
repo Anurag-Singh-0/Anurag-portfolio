@@ -34,12 +34,12 @@ nav .fas {
   .header-container nav ul {
     position: fixed;
     top: 0;
-    right: 0;
+    right:-270px;
     width: 75%;
     height: 100vh;
     padding-top: 50px;
     background-color: lightseagreen;
-    display: none;
+    transition:right ease 0.4s;
   }
 
   .header-container nav ul li {

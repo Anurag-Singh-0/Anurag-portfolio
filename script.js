@@ -1,11 +1,20 @@
 let autotype = document.querySelector("#auto-type");
 let closeMenu = document.querySelector("#closeMenu");
 let openMenu = document.querySelector("#openMenu");
+let menu = document.querySelector("#menu");
+let slidelink = document.querySelectorAll(".header-container nav ul li");
 
 
-openMenu.addEventListener("click", () => {
-  
-})
+function toggleSlide() {
+  if (menu.style.right === "0px") {
+    menu.style.right = "-270px";
+  } else {
+    menu.style.right = "0";
+  }
+}
+
+openMenu.addEventListener("click", toggleSlide);
+closeMenu.addEventListener("click", toggleSlide);
 
 var typed = new Typed(autotype, {
   strings: [
@@ -103,18 +112,17 @@ aboutCard.addEventListener("mouseleave", () => {
   });
 });
 
-
 var tabLinks = document.getElementsByClassName("tab-links");
 var tabContents = document.getElementsByClassName("tab-contents");
 
-function opentab(tabName){
+function opentab(tabName) {
   for (const tabLink of tabLinks) {
-    tabLink.classList.remove("active-link")
+    tabLink.classList.remove("active-link");
   }
 
   for (const tabContent of tabContents) {
-    tabContent.classList.remove("active-tab")
+    tabContent.classList.remove("active-tab");
   }
   event.currentTarget.classList.add("active-link");
-  document.getElementById(tabName).classList.add("active-tab")
+  document.getElementById(tabName).classList.add("active-tab");
 }
