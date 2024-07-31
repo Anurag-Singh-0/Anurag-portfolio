@@ -34,7 +34,7 @@ nav .fas {
   .header-container nav ul {
     position: fixed;
     top: 0;
-    right:-270px;
+    right:-500px;
     width: 75%;
     height: 100vh;
     padding-top: 50px;

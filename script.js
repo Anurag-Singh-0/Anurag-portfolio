@@ -7,7 +7,7 @@ let slidelink = document.querySelectorAll(".header-container nav ul li");
 
 function toggleSlide() {
   if (menu.style.right === "0px") {
-    menu.style.right = "-270px";
+    menu.style.right = "-500px";
   } else {
     menu.style.right = "0";
   }
