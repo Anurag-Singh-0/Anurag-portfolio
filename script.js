@@ -2,8 +2,15 @@ let autotype = document.querySelector("#auto-type");
 let closeMenu = document.querySelector("#closeMenu");
 let openMenu = document.querySelector("#openMenu");
 let menu = document.querySelector("#menu");
-let slidelink = document.querySelectorAll(".header-container nav ul li");
+let slidelink = document.querySelectorAll(".header-container nav ul li a");
 
+
+slidelink.forEach((el) => {
+  console.log(el);
+  el.addEventListener("click", () => {
+    menu.style.right = "-500px";
+  });
+});
 
 function toggleSlide() {
   if (menu.style.right === "0px") {
