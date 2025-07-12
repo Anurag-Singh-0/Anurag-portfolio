@@ -14,7 +14,6 @@
   --darkColor: #292929;
 }
 
-
 html {
   scroll-behavior: smooth;
   user-select: none;
@@ -31,7 +30,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color:var(--primaryColor);
+  background-color: var(--primaryColor);
   border-radius: 20px;
 }
 
@@ -193,7 +192,6 @@ nav ul li a:hover::after {
 }
 /* <<<<<<<<<<<<<----------------------End Header section Styling----------------->>>>>>>>>>> */
 
-
 /* <<<<<<<<<<<<<----------------------Start About section Styling----------------->>>>>>>>>>> */
 #about {
   position: relative;
@@ -301,7 +299,6 @@ nav ul li a:hover::after {
 }
 /* <<<<<<<<<<<---------------End About section Styling----------------->>>>>>>>>>> */
 
-
 /* <<<<<---------------------Start skills section---------------------->>>>>>>>>>>> */
 #skill {
   position: relative;
@@ -367,7 +364,7 @@ nav ul li a:hover::after {
   padding-top: 2px;
   font-weight: 500;
 }
-/* <<<<<---------------------End skills section---------------------->>>>>>>>>>>> */ 
+/* <<<<<---------------------End skills section---------------------->>>>>>>>>>>> */
 
 /* <<<<<--------------------Start education section----------------->>>>>>>>>> */
 .education-sec {
@@ -430,7 +427,6 @@ nav ul li a:hover::after {
 }
 
 /* <<<<<--------------------End education section----------------->>>>>>>>>> */
-
 
 /* <<<<<<<-----------------Start Project Section------------------>>>>>>>> */
 #project {
@@ -561,15 +557,14 @@ nav ul li a:hover::after {
 }
 /* <<<<<<<-----------------End Project Section------------------>>>>>>>> */
 
-
 /* <<<<<<--------------Start Contact Section-------------------->>>>>>>> */
 #contact {
- position: relative;
+  position: relative;
 }
 
 .contact-container {
   height: 100vh;
-  padding:30px 0 60px 0;
+  padding: 30px 0 60px 0;
 }
 
 .contact-container .row {
@@ -580,7 +575,7 @@ nav ul li a:hover::after {
 
 .contact-container h1 {
   text-align: center;
-  margin-bottom:30px;
+  margin-bottom: 30px;
 }
 
 .left-contact {
@@ -671,7 +666,6 @@ form textarea:focus {
   transition: 100ms;
 }
 /* <<<<<<--------------End Contact Section-------------------->>>>>>>> */
-
 
 /* <<<<<<<<------------Start Footer Section------------>>>>>>>>>>>> */
 footer .container {

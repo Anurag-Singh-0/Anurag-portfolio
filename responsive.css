@@ -34,12 +34,12 @@ nav .fas {
   .header-container nav ul {
     position: fixed;
     top: 0;
-    right:-500px;
+    right: -500px;
     width: 75%;
     height: 100vh;
     padding-top: 50px;
     background-color: lightseagreen;
-    transition:right ease 0.4s;
+    transition: right ease 0.4s;
   }
 
   .header-container nav ul li {
@@ -213,7 +213,7 @@ nav .fas {
   .contact-container {
     width: 100vw;
     height: auto;
-    padding:0 20px;
+    padding: 0 20px;
   }
 
   .left-contact {
@@ -232,7 +232,7 @@ nav .fas {
 
   form input,
   form textarea {
-    width:100%;
+    width: 100%;
     box-shadow: none;
     border: 1px solid #000;
     background-color: #e5ecfb;
@@ -261,7 +261,7 @@ nav .fas {
   }
 
   .sub-btn:hover {
-    box-shadow:none;
+    box-shadow: none;
   }
 
   form input:focus {
@@ -299,17 +299,250 @@ nav .fas {
     gap: 20px;
   }
 
-  .contact-info ul li  {
+  .contact-info ul li {
     height: 40px;
     width: 40px;
-  } 
+  }
 
-  #copyright-message  {
+  #copyright-message {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     padding: 20px 10px;
-    font-size:12px;
+    font-size: 12px;
+    height: auto;
+  }
+}
+
+/* Small (SM) - Large phones and small tablets (576px - 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .header-container {
+    padding: 1rem 2rem;
+    overflow: hidden;
+    height: auto;
+  }
+
+  nav {
+    flex-wrap: nowrap;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0 1rem;
+    background-color: rgba(0, 0, 0, 0.179);
+    backdrop-filter: blur(50px);
+  }
+
+  nav ul li {
+    padding: 0;
+    font-size: 1vw;
+    padding-right: 5px;
+    font-weight: 500;
+  }
+
+  .hero-section {
+    padding: 30px 0 0 0;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+
+  .left-content {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .left-content .social-media {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .about-container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+  }
+
+  #about .row {
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-card {
+    height: 394px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info {
+    font-size: 16px;
+    margin-top: 2rem;
+  }
+
+  .skill-container {
+    height: auto;
+    padding: 20px 0 59px 0;
+  }
+
+  .education-container {
+    padding: 1rem 1.5rem;
+  }
+
+  .college-info h1 {
+    font-size: 1.3rem;
+  }
+
+  .contact-container {
+    padding: 0;
+  }
+
+  #contact {
+    margin-bottom: 5rem;
+  }
+
+  .contact-container .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .left-contact {
+    display: none;
+  }
+
+  .right-contact {
+    max-width: 80%;
+  }
+
+  footer .container {
+    padding: 24px 0;
+    height: auto;
+  }
+}
+
+/* Medium (MD) - Tablets (768px - 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .header-container {
+    padding: 1rem 2rem;
+    overflow: hidden;
+    height: auto;
+  }
+
+  nav {
+    flex-wrap: nowrap;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0 1rem;
+    background-color: rgba(0, 0, 0, 0.179);
+    backdrop-filter: blur(50px);
+  }
+
+  nav ul li {
+    padding: 0;
+    font-size: 1vw;
+    padding-right: 1.5rem;
+    font-weight: 500;
+  }
+
+  .hero-section {
+    padding: 30px 0 0 0;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+
+  .left-content {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .left-content .social-media {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .about-container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+  }
+
+  #about .row {
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-card {
+    height: 394px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info {
+    font-size: 16px;
+    margin-top: 2rem;
+  }
+
+  .skill-container {
+    height: auto;
+    padding: 20px 0 59px 0;
+  }
+
+  .education-container {
+    padding: 1rem 1.5rem;
+  }
+
+  .college-info h1 {
+    font-size: 1.3rem;
+  }
+
+  .contact-container {
+    padding: 0;
+    height: 50vh;
+  }
+
+  .contact-container .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .left-contact {
+    display: none;
+  }
+
+  .right-contact {
+    max-width: 80%;
+  }
+
+  footer .container {
+    padding: 24px 0;
     height: auto;
   }
 }

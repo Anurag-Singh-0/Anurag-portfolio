@@ -4,7 +4,6 @@ let openMenu = document.querySelector("#openMenu");
 let menu = document.querySelector("#menu");
 let slidelink = document.querySelectorAll(".header-container nav ul li a");
 
-
 slidelink.forEach((el) => {
   console.log(el);
   el.addEventListener("click", () => {
